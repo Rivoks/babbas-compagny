@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Dashboard - Babba's Compagny</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/all.css" rel="stylesheet">
+    <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+    <link href="../../css/main.css" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-color="green" data-image="img/sidebar-5.jpg">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="#" class="simple-text">
+                      Babba's Compagny
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="commande.html">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <p>Commandes</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="messages.html">
+                            <i class="far fa-envelope"></i>
+                            <p>Messages</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="produits.html">
+                            <i class="fas fa-seedling"></i>
+                            <p>Produits</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="nouveau.html">
+                            <i class="fas fa-plus-circle"></i>
+                            <p>Nouveau produits</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="no-icon">Deconnexion</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"><br>
+                            <div class="card strpied-tabled-with-hover">
+                                <div class="card-header ">
+                                    <h4 class="card-title">Liste des commandes</h4>
+                                    <p class="card-category">Sous-titre du titre principal</p>
+                                </div>
+                                <div class="card-body table-full-width table-responsive">
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                            <th>N° Message</th>
+                                            <th>Nom</th>
+                                            <th>Adresse email</th>
+                                            <th>Date</th>
+                                            <th>Message</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>004</td>
+                                                <td>Dakota Rice</td>
+                                                <td>dakota@rice.fr</td>
+                                                <td>12/06/2020</td>
+                                                <td>
+                                                <a class="btn btn-green" data-toggle="collapse" href="#message004" role="button" aria-expanded="false" aria-controls="message004">Ouvrir</a>
+                                                
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>005</td>
+                                                <td>Jeff Bezos</td>
+                                                <td>jeffou93@amouzoun.com</td>
+                                                <td>14/12/1978</td>
+                                                <td>
+                                                <a class="btn btn-green" data-toggle="collapse" href="#message005" role="button" aria-expanded="false" aria-controls="message005">Ouvrir</a>
+                                                
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="collapse" id="message004">
+                                        <div class="card card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="message005">
+                                        <div class="card card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo dolor quis aliquam sodales. Phasellus elementum, libero non porttitor tempus, ex ligula suscipit tortor, sed lacinia mauris ligula vel enim. Vestibulum pretium iaculis felis, in iaculis ligula molestie a. Cras ac varius odio, vel luctus eros. Phasellus quis justo non dolor mollis feugiat quis sed purus. Vivamus cursus dolor sed enim blandit porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eu vulputate massa, in tristique odio. Vestibulum sollicitudin turpis consequat, fermentum tellus a, feugiat eros. Morbi maximus nunc nec nulla sollicitudin eleifend. Phasellus in aliquam urna, in aliquet risus. Proin in enim non justo pulvinar porta. Mauris iaculis pellentesque posuere.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+                
+            <!-- End Navbar -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="section">
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="nav justify-content-center">
+                        <p class="copyright text-center">
+                            ©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                            Babba's Compagny - by Yazid BOUHRIA
+                        </p>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!--  Chartist Plugin  -->
+<script src="../assets/js/plugins/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
+
+</html>
