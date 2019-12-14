@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Yazid-BOUHRIA">
+
+  <title>Babba's Compagny</title>
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="css/modern-business.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+    
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="avatar">
+					<img src="img/user.png" alt="avatar">
+				</div>				
+				<h4 class="modal-title">Espace Membre</h4>	
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="/examples/actions/confirmation.php" method="post">
+					<div class="form-group">
+						<input type="text" class="form-control" name="username" placeholder="Adresse mail" required="required">		
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" name="password" placeholder="Mot de passe" required="required">	
+					</div>        
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Se connecter</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="">Mot de passe oublié ?</a>
+                <a href="#" class="pl-4 pr-2">S'inscrire</a>
+			</div>
+		</div>
+	</div>
+</div>     
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Babba's Compagny</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="presentation.html">Présentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="fleurs.html">Nos fleurs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="bouquets.html">Nos bouquets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="pots.html">Nos pots</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="contact.html">Contact</a>
+          </li> 
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link pr-4" href="panier.html" data-toggle="tooltip" data-placement="top" title="Mon Panier"><i class="fas fa-shopping-cart"></i><span class="d-xl-none d-lg-none pl-2">Mon Panier</span></a>
+            </li>
+            <li class="nav-item">
+                <span data-toggle="modal" data-target="#myModal"><a class="nav-link pr-4" href="#" data-toggle="tooltip" data-placement="top" title="Me connecter"><i class="far fa-user"></i><span class="d-xl-none d-lg-none pl-2">Me connecter</span></a></span>  
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="pb-5 pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+            <main class="page payment-page">
+                <section class="payment-form dark">
+                  <div class="container">
+                    <div class="block-heading">
+                      <h2>Paiement par Carte</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                    </div>
+                    <form>
+                      <div class="products">
+                        <h3 class="title">Checkout</h3>
+                        <div class="item">
+                          <span class="price">$200</span>
+                          <p class="item-name">Product 1</p>
+                          <p class="item-description">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="item">
+                          <span class="price">$120</span>
+                          <p class="item-name">Product 2</p>
+                          <p class="item-description">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="total">Total<span class="price">$320</span></div>
+                      </div>
+                      <div class="card-details">
+                        <h3 class="title">Détail de la carte au crédit</h3>
+                        <div class="row">
+                          <div class="form-group col-sm-7">
+                            <label for="card-holder">Nom sur la carte</label>
+                            <input id="card-holder" type="text" class="form-control" placeholder="Card Holder" aria-label="Card Holder" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="form-group col-sm-5">
+                            <label for="">Date d'expiration</label>
+                            <div class="input-group expiration-date">
+                              <input type="text" class="form-control" placeholder="MM" aria-label="MM" aria-describedby="basic-addon1">
+                              <span class="date-separator">/</span>
+                              <input type="text" class="form-control" placeholder="YY" aria-label="YY" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="form-group col-sm-8">
+                            <label for="card-number">Numéro Carte</label>
+                            <input id="card-number" type="text" class="form-control" placeholder="Card Number" aria-label="Card Holder" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="form-group col-sm-4">
+                            <label for="cvc">CVC</label>
+                            <input id="cvc" type="text" class="form-control" placeholder="CVC" aria-label="Card Holder" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="form-group col-sm-12">
+                            <button type="button" class="btn btn-green btn-block">Payer</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </section>
+            </main>
+          <!-- End -->
+        </div>
+      </div>
+    </div>
+    </div><br><br>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Babba's Compagny 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

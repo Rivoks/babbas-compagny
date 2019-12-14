@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Yazid-BOUHRIA">
+
+  <title>Babba's Compagny</title>
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="css/modern-business.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="avatar">
+					<img src="img/user.png" alt="avatar">
+				</div>				
+				<h4 class="modal-title">Espace Membre</h4>	
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="/examples/actions/confirmation.php" method="post">
+					<div class="form-group">
+						<input type="text" class="form-control" name="username" placeholder="Adresse mail" required="required">		
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" name="password" placeholder="Mot de passe" required="required">	
+					</div>        
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Se connecter</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="">Mot de passe oublié ?</a>
+                <a href="#" class="pl-4 pr-2">S'inscrire</a>
+			</div>
+		</div>
+	</div>
+</div>     
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Babba's Compagny</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="presentation.html">Présentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="fleurs.html">Nos fleurs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="bouquets.html">Nos bouquets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="pots.html">Nos pots</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="contact.html">Contact</a>
+          </li> 
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link pr-4" href="panier.html" data-toggle="tooltip" data-placement="top" title="Mon Panier"><i class="fas fa-shopping-cart"></i><span class="d-xl-none d-lg-none pl-2">Mon Panier</span></a>
+            </li>
+            <li class="nav-item">
+                <span data-toggle="modal" data-target="#myModal"><a class="nav-link pr-4" href="#" data-toggle="tooltip" data-placement="top" title="Me connecter"><i class="far fa-user"></i><span class="d-xl-none d-lg-none pl-2">Me connecter</span></a></span>  
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="pb-5 pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+        <h1 class="pb-5">Mon panier</h1>
+          <!-- Shopping cart table -->
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="border-0 bg-green">
+                    <div class="p-2 px-3 text-uppercase">Produit</div>
+                  </th>
+                  <th scope="col" class="border-0 bg-green">
+                    <div class="py-2 text-uppercase">Prix</div>
+                  </th>
+                  <th scope="col" class="border-0 bg-green">
+                    <div class="py-2 text-uppercase">Quantité</div>
+                  </th>
+                  <th scope="col" class="border-0 bg-green">
+                    <div class="py-2 text-uppercase">Supprimer</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="border-0">
+                    <div class="p-2">
+                      <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-1_zrifhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Timex Unisex Originals</a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="border-0 align-middle"><strong>€79.00</strong></td>
+                  <td class="border-0 align-middle"><strong>2</strong></td>
+                  <td class="border-0 align-middle"><a href="#" class="text-green"><i class="fa fa-trash"></i></a></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="p-2">
+                      <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-3_cexmhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">Lumix camera lense</a></h5><span class="text-muted font-weight-normal font-italic">Category: Electronics</span>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle"><strong>€79.00</strong></td>
+                  <td class="align-middle"><strong>1</strong></td>
+                  <td class="align-middle"><a href="#" class="text-green"><i class="fa fa-trash"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="p-2">
+                      <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-2_qxjis2.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Gray Nike running shoe</a></h5><span class="text-muted font-weight-normal font-italic">Category: Fashion</span>
+                      </div>
+                    </div>
+                    <td class="align-middle"><strong>€79.00</strong></td>
+                    <td class="align-middle"><strong>1</strong></td>
+                    <td class="align-middle"><a href="#" class="text-green"><i class="fa fa-trash"></i></a>
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- End -->
+        </div>
+      </div>
+
+      <div class="row py-5 p-4 bg-white rounded shadow-sm">
+        <div class="col-lg-6">
+          <div class="bg-green rounded-pill px-4 py-3 text-uppercase font-weight-bold">Code promo</div>
+          <div class="p-4">
+            <p class="font-italic mb-4">Si vous avez un code promo, veuillez le saisir dans la case ci-dessous</p>
+            <div class="input-group mb-4 border rounded-pill p-2">
+              <input type="text" placeholder="Utiliser un code promo" aria-describedby="button-addon3" class="form-control border-0 border-cancel">
+              <div class="input-group-append border-0">
+                <button id="button-addon3" type="button" class="btn btn-green px-4 rounded-pill"><i class="fa fa-gift mr-2"></i>Utiliser le code</button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Indication au vendeur</div>
+          <div class="p-4">
+            <p class="font-italic mb-4">Si vous avez des informations pour le vendeur, vous pouvez nous les communiquer ci-dessous</p>
+            <textarea name="" cols="30" rows="2" class="form-control" placeholder="Indication"></textarea>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-green rounded-pill px-4 py-3 text-uppercase font-weight-bold">Récapitulatif de la commande</div>
+          <div class="p-4">
+            <p class="font-italic mb-4">Les frais d'expédition et les coûts supplémentaires sont calculés en fonction des valeurs que vous avez saisies.</p>
+            <ul class="list-unstyled mb-4">
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total HTC </strong><strong>€100.00</strong></li>
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">TVA</strong><strong>€20.00</strong></li>
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Frais de livraison</strong><strong>€10.00</strong></li>
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total TTC</strong>
+                <h5 class="font-weight-bold">€130.00</h5>
+              </li>
+            </ul><a href="#" class="btn btn-green rounded-pill py-2 btn-block">Procéder au paiement</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div><br><br>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Babba's Compagny 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

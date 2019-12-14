@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Yazid-BOUHRIA">
+
+  <title>Babba's Compagny</title>
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="css/modern-business.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="avatar">
+					<img src="img/user.png" alt="avatar">
+				</div>				
+				<h4 class="modal-title">Espace Membre</h4>	
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="/examples/actions/confirmation.php" method="post">
+					<div class="form-group">
+						<input type="text" class="form-control" name="username" placeholder="Adresse mail" required="required">		
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" name="password" placeholder="Mot de passe" required="required">	
+					</div>        
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Se connecter</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="">Mot de passe oublié ?</a>
+                <a href="#" class="pl-4 pr-2">S'inscrire</a>
+			</div>
+		</div>
+	</div>
+</div>     
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Babba's Compagny</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="presentation.html">Présentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="fleurs.html">Nos fleurs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="bouquets.html">Nos bouquets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="pots.html">Nos pots</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-4" href="contact.html">Contact</a>
+          </li> 
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link pr-4" href="panier.html" data-toggle="tooltip" data-placement="top" title="Mon Panier"><i class="fas fa-shopping-cart"></i><span class="d-xl-none d-lg-none pl-2">Mon Panier</span></a>
+            </li>
+            <li class="nav-item">
+                <span data-toggle="modal" data-target="#myModal"><a class="nav-link pr-4" href="#" data-toggle="tooltip" data-placement="top" title="Me connecter"><i class="far fa-user"></i><span class="d-xl-none d-lg-none pl-2">Me connecter</span></a></span>  
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+    <header class="masthead-alt">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center">
+            <h1 class="text-white">Fleurs artificielles <br>de qualité supérieure</h1><br>
+            <div class="text-center"><a href="#presentation" class="smooth-scroll btn btn-outline-light">Découvrir</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <!-- Page Content -->
+
+  <div class="container" id="presentation"><br><br><br>
+    <div class="row">
+        <div class="col-12">
+            <img class="mx-auto d-block img-logo" src="img/logo-babbas.png" alt="logo-babbas">
+        </div>
+    </div>
+
+    <h1 class="my-4 text-center">Presentation de Babba's Compagny</h1><hr><br>
+
+    <div class="row">
+        <div class="col-12">
+            <p class="lead text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget velit nisi. Morbi porttitor augue eu volutpat gravida. In a pharetra massa, blandit accumsan neque. Aliquam pulvinar posuere nisl ac vestibulum. Etiam eu justo dapibus, hendrerit arcu at, pretium eros. Nam eu ullamcorper magna. Donec vel vulputate ex, id consectetur purus. Etiam egestas ex sit amet libero eleifend, eget hendrerit lacus mollis. Maecenas mattis nisi in maximus congue. Donec at tortor semper sapien ullamcorper dictum vel et tortor. Aliquam luctus felis id arcu faucibus, vel rutrum risus accumsan. Vestibulum laoreet finibus aliquet. <br><br>
+                
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget velit nisi. Morbi porttitor augue eu volutpat gravida. In a pharetra massa, blandit accumsan neque. Aliquam pulvinar posuere nisl ac vestibulum. Etiam eu justo dapibus, hendrerit arcu at, pretium eros. Nam eu ullamcorper magna. Donec vel vulputate ex, id consectetur purus. Etiam egestas ex sit amet libero eleifend, eget hendrerit lacus mollis. Maecenas mattis nisi in maximus congue. Donec at tortor semper sapien ullamcorper dictum vel et tortor. Aliquam luctus felis id arcu faucibus, vel rutrum risus accumsan. Vestibulum laoreet finibus aliquet. <br><br>
+                
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget velit nisi. Morbi porttitor augue eu volutpat gravida. In a pharetra massa, blandit accumsan neque. Aliquam pulvinar posuere nisl ac vestibulum. Etiam eu justo dapibus, hendrerit arcu at, pretium eros. Nam eu ullamcorper magna. Donec vel vulputate ex, id consectetur purus. Etiam egestas ex sit amet libero eleifend, eget hendrerit lacus mollis. Maecenas mattis nisi in maximus congue. Donec at tortor semper sapien ullamcorper dictum vel et tortor. Aliquam luctus felis id arcu faucibus, vel rutrum risus accumsan. Vestibulum laoreet finibus aliquet.
+            </p>
+        </div>  
+    </div><br><hr><br>
+
+    <h2 class="text-center">Nos engagements</h2><br><br><br>
+    <div class="row">
+        <div class="col-lg-3 col-sm-12 text-center">
+            <i class="fas fa-spa fa-3x fa-green"></i>
+            <p class="pt-3">Authenticité de la fleur</p>
+        </div>
+        <div class="col-lg-3 col-sm-12 text-center">
+            <i class="fas fa-truck fa-3x fa-green"></i>
+            <p class="pt-3">Livraison Rapide</p>
+        </div> 
+        <div class="col-lg-3 col-sm-12 text-center">
+            <i class="far fa-star fa-3x fa-green"></i>
+            <p class="pt-3">Savoir faire</p>
+        </div> 
+        <div class="col-lg-3 col-sm-12 text-center">
+            <i class="fas fa-palette fa-3x fa-green"></i>
+            <p class="pt-3">Bouquet coloré</p>
+        </div> 
+    </div>
+    <br><hr><br>
+      
+    <h2 class="text-center">Ils nous font confiance</h2><br><br><br>
+    <div class="row">
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+      </div>
+    </div>
+
+  </div><br><br><br>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Babba's Compagny 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
